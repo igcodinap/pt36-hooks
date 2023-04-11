@@ -4,13 +4,12 @@ export default function Timer() {
     const [time, setTime] = useState(0);
 
     useEffect(() => {
-        console.log(time, '<----time')
         setInterval(() => {
+            console.log(time, '<----time')
+            // setTime(time + 1);
             setTime((previousTime) => previousTime + 1)
         }, 1000)
     }, [])
-
-
 
 
     return(
